@@ -5,6 +5,13 @@ This gem provides an command line tool for returning a user's favourite
 programming language. You can either return their favourite programming
 language by number of repositories or by repository size.
 
+Installation
+------------
+
+``` sh
+$ gem install favourite-language
+```
+
 Usage
 -----
 
