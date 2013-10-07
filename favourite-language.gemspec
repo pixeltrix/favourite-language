@@ -9,6 +9,8 @@ Gem::Specification.new do |s|
     programming language from their GitHub public repositories.
   EOS
 
+  s.required_ruby_version = '>= 1.9.2'
+
   s.add_dependency 'thor', '~> 0.18'
   s.add_dependency 'octokit', '~> 2.0'
   s.add_development_dependency 'rspec', '~> 2.14'

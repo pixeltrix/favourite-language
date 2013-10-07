@@ -32,11 +32,11 @@ describe FavouriteLanguage do
 
     it "should display an error message if the server returns a 4XX error" do
       response = {
-        :method => 'get',
-        :url    => 'https://api.github.com/users/pixeltrix/repos',
-        :status => 403,
-        :body   => {
-          :message => 'Forbidden'
+        method: 'get',
+        url: 'https://api.github.com/users/pixeltrix/repos',
+        status: 403,
+        body: {
+          message: 'Forbidden'
         }
       }
 
@@ -46,11 +46,11 @@ describe FavouriteLanguage do
 
     it "should display an error message if the server returns a 5XX error" do
       response = {
-        :method => 'get',
-        :url    => 'https://api.github.com/users/pixeltrix/repos',
-        :status => 503,
-        :body   => {
-          :message => 'Service Unavailable'
+        method: 'get',
+        url: 'https://api.github.com/users/pixeltrix/repos',
+        status: 503,
+        body: {
+          message: 'Service Unavailable'
         }
       }
 
