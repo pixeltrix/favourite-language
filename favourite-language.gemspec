@@ -10,7 +10,13 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'thor', '~> 0.18'
   s.add_dependency 'octokit', '~> 2.0'
+  s.files = [
+    'bin/favourite-language',
+    'lib/favourite_language.rb',
+    'favourite-language.gemspec',
+    'LICENSE.md',
+    'README.md'
+  ]
 
-  s.files = %w[bin/favourite-language favourite-language.gemspec LICENSE.md README.md]
   s.executables = %w[favourite-language]
 end
