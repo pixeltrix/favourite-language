@@ -37,17 +37,15 @@ class FavouriteLanguage < Thor
   end
 
   def languages_by_num_repos(user)
-    repositories(user).inject({}) do |languages, repository|
-      language = repository.language
-      languages[language] = languages.fetch(language, 0) + 1
+    repositories(user).inject(Hash.new(0)) do |languages, repository|
+      languages[repository.language] += 1
       languages
     end
   end
 
   def languages_by_size(user)
-    repositories(user).inject({}) do |languages, repository|
-      language = repository.language
-      languages[language] = languages.fetch(language, 0) + repository.size
+    repositories(user).inject(Hash.new(0)) do |languages, repository|
+      languages[repository.language] += repository.size
       languages
     end
   end
