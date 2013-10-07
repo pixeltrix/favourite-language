@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name    = 'favourite-language'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.author  = 'Andrew White'
   s.email   = 'andyw@pixeltrix.co.uk'
   s.summary = <<-EOS
